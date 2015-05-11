@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Dm-Bv-YbO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idanPlusTv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OGB-zV-Pgt"/>
+                        <viewControllerLayoutGuide type="bottom" id="SH4-oU-8vZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="KLo-dX-ATW">
+                                <rect key="frame" x="0.0" y="0.0" width="898" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-ZP-MtI">
+                                <rect key="frame" x="23" y="212" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="rgU-sf-cQZ"/>
+                                    <constraint firstAttribute="width" constant="125" id="zDw-WY-agO"/>
+                                </constraints>
+                                <state key="normal" image="th_721715612_11_122_584lo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rgU-sf-cQZ"/>
+                                        <exclude reference="zDw-WY-agO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="30" y="271" width="125" height="125"/>
+                                    <mask key="constraints">
+                                        <include reference="rgU-sf-cQZ"/>
+                                        <include reference="zDw-WY-agO"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ehad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pga-Kk-LbT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDX-r6-snX">
+                                <rect key="frame" x="215" y="212" width="151" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="PtH-7b-4kM"/>
+                                    <constraint firstAttribute="width" constant="151" id="d1w-98-lzr"/>
+                                </constraints>
+                                <state key="normal" image="th_721716333_10_122_397lo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PtH-7b-4kM"/>
+                                        <exclude reference="d1w-98-lzr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="192" y="271" width="151" height="125"/>
+                                    <mask key="constraints">
+                                        <include reference="PtH-7b-4kM"/>
+                                        <include reference="d1w-98-lzr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="eser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyO-Mw-czg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Idanpluslogo1-1" translatesAutoresizingMaskIntoConstraints="NO" id="B2O-K4-EJm">
+                                <rect key="frame" x="92" y="76" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyg-wF-cE5">
+                                <rect key="frame" x="253" y="605" width="106" height="42"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <state key="normal" title="תחנות רדיו">
+                                    <color key="titleColor" red="1" green="0.24368123314386092" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="253" y="206" width="106" height="42"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="tH9-9W-HnD" kind="show" id="u0j-GP-bJt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKQ-b1-DlV">
+                                <rect key="frame" x="125" y="405" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="1xN-YT-pZj"/>
+                                    <constraint firstAttribute="height" constant="125" id="lc5-Li-awJ"/>
+                                </constraints>
+                                <state key="normal" image="f3ls0">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1xN-YT-pZj"/>
+                                        <exclude reference="lc5-Li-awJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1xN-YT-pZj"/>
+                                        <include reference="lc5-Li-awJ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="shtaim:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZX-sq-izL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SKQ-b1-DlV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="290" id="14p-Jw-StY"/>
+                            <constraint firstItem="B2O-K4-EJm" firstAttribute="top" secondItem="OGB-zV-Pgt" secondAttribute="bottom" constant="20" id="2wo-mZ-0q5"/>
+                            <constraint firstItem="U3a-ZP-MtI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="46e-dO-xwP"/>
+                            <constraint firstAttribute="centerY" secondItem="qDX-r6-snX" secondAttribute="centerY" id="9Tp-vm-Lxh"/>
+                            <constraint firstItem="SKQ-b1-DlV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="280" id="G9d-Pa-tn2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qDX-r6-snX" secondAttribute="trailing" constant="50" id="O0K-H0-5VK"/>
+                            <constraint firstItem="SKQ-b1-DlV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="150" id="Tgk-tj-5t1"/>
+                            <constraint firstItem="qDX-r6-snX" firstAttribute="leading" secondItem="U3a-ZP-MtI" secondAttribute="trailing" constant="50" id="pMk-k5-X03"/>
+                            <constraint firstAttribute="centerX" secondItem="B2O-K4-EJm" secondAttribute="centerX" id="psa-9Y-W8T"/>
+                            <constraint firstAttribute="centerY" secondItem="U3a-ZP-MtI" secondAttribute="centerY" id="ux3-qg-M8F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SKQ-b1-DlV" secondAttribute="trailing" constant="300" id="zrr-8v-VqI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2wo-mZ-0q5"/>
+                                <exclude reference="46e-dO-xwP"/>
+                                <exclude reference="ux3-qg-M8F"/>
+                                <exclude reference="9Tp-vm-Lxh"/>
+                                <exclude reference="O0K-H0-5VK"/>
+                                <exclude reference="pMk-k5-X03"/>
+                                <exclude reference="14p-Jw-StY"/>
+                                <exclude reference="G9d-Pa-tn2"/>
+                                <exclude reference="Tgk-tj-5t1"/>
+                                <exclude reference="zrr-8v-VqI"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2wo-mZ-0q5"/>
+                                <include reference="46e-dO-xwP"/>
+                                <include reference="ux3-qg-M8F"/>
+                                <include reference="9Tp-vm-Lxh"/>
+                                <include reference="O0K-H0-5VK"/>
+                                <include reference="pMk-k5-X03"/>
+                                <include reference="14p-Jw-StY"/>
+                                <include reference="G9d-Pa-tn2"/>
+                                <include reference="Tgk-tj-5t1"/>
+                                <include reference="zrr-8v-VqI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="puh-Se-JgT"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133.4375" y="163.20422535211267"/>
+        </scene>
+        <!--תחנות רדיו-->
+        <scene sceneID="hSQ-fn-Eyq">
+            <objects>
+                <tableViewController id="tH9-9W-HnD" customClass="RadioStation" customModule="idanPlusTv" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PWM-Rv-fmb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="8Hp-DB-Kci">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6rZ-lQ-ula">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6rZ-lQ-ula" id="x6K-Lu-dNZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28o-Ot-cQ0">
+                                                    <rect key="frame" x="14" y="8" width="44" height="30"/>
+                                                    <state key="normal" title="רשת א׳">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reshetAlef:" destination="tH9-9W-HnD" eventType="touchUpInside" id="PKa-AG-7sG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bq3-bL-lvk">
+                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bq3-bL-lvk" id="gni-ka-dJD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqM-7D-Rp5">
+                                                    <rect key="frame" x="16" y="7" width="44" height="30"/>
+                                                    <state key="normal" title="רשת ב׳">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reshetBet:" destination="tH9-9W-HnD" eventType="touchUpInside" id="z51-Ee-oLn"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wbr-RI-8im">
+                                        <rect key="frame" x="0.0" y="152" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wbr-RI-8im" id="RoL-8X-MZG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqY-a5-Sj6">
+                                                    <rect key="frame" x="15" y="7" width="42" height="30"/>
+                                                    <state key="normal" title="רשת ג׳">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reshetGimel:" destination="tH9-9W-HnD" eventType="touchUpInside" id="gF9-1B-Cbm"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="mr8-mx-itr">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ktZ-nu-ONb">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ktZ-nu-ONb" id="aY5-CM-13M">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-OG-nts">
+                                                    <rect key="frame" x="14" y="8" width="44" height="30"/>
+                                                    <state key="normal" title="רשת ד׳">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="reshetDaled:" destination="tH9-9W-HnD" eventType="touchUpInside" id="0P7-wM-eU4"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2uF-VO-qqc">
+                                        <rect key="frame" x="0.0" y="240" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uF-VO-qqc" id="rQb-mC-C0f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDZ-Ud-7HS">
+                                                    <rect key="frame" x="23" y="7" width="30" height="30"/>
+                                                    <state key="normal" title="גל׳צ">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="galatz:" destination="tH9-9W-HnD" eventType="touchUpInside" id="eec-3y-ul1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="c6z-nX-v29">
+                                        <rect key="frame" x="0.0" y="284" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c6z-nX-v29" id="0zF-cd-nql">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-KC-Jjo">
+                                                    <rect key="frame" x="17" y="7" width="40" height="30"/>
+                                                    <state key="normal" title="גלגל״צ">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="galgaltz:" destination="tH9-9W-HnD" eventType="touchUpInside" id="oam-Me-1NR"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="zQ5-Ac-7X3">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="f9G-Wm-mHa">
+                                        <rect key="frame" x="0.0" y="328" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f9G-Wm-mHa" id="Efo-gD-HgU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-4q-Cv9">
+                                                    <rect key="frame" x="14" y="8" width="44" height="30"/>
+                                                    <state key="normal" title="90 FM">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="tishimFM:" destination="tH9-9W-HnD" eventType="touchUpInside" id="13v-cp-feu"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4Mc-Ep-c5C">
+                                        <rect key="frame" x="0.0" y="372" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Mc-Ep-c5C" id="kh4-uD-snK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4u-Jv-WNm">
+                                                    <rect key="frame" x="6" y="7" width="78" height="30"/>
+                                                    <state key="normal" title="לב המדינה">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="levHamedina:" destination="tH9-9W-HnD" eventType="touchUpInside" id="gH1-YU-qMR"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SLW-hS-KLa">
+                                        <rect key="frame" x="0.0" y="416" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SLW-hS-KLa" id="dvM-3v-a2a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpp-fh-SV7">
+                                                    <rect key="frame" x="10" y="7" width="52" height="30"/>
+                                                    <state key="normal" title="100 FM">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="meaFM:" destination="tH9-9W-HnD" eventType="touchUpInside" id="h4J-Lb-Faa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="" id="OQP-Jy-Emt">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ctt-Gv-z6k">
+                                        <rect key="frame" x="0.0" y="460" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ctt-Gv-z6k" id="ldh-9f-42p">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKI-i4-Y0U">
+                                                    <rect key="frame" x="14" y="8" width="44" height="30"/>
+                                                    <state key="normal" title="88 FM">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shminimVeshmoneFM:" destination="tH9-9W-HnD" eventType="touchUpInside" id="MPJ-5h-TPU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TJW-ZX-PUX">
+                                        <rect key="frame" x="0.0" y="504" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TJW-ZX-PUX" id="uI5-Xs-FLy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPv-Zc-czt">
+                                                    <rect key="frame" x="-14" y="7" width="115" height="30"/>
+                                                    <state key="normal" title="קול המוסיקה">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="kolHamozika:" destination="tH9-9W-HnD" eventType="touchUpInside" id="0Ko-Q2-Pnq"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Z7B-mQ-zhq">
+                                        <rect key="frame" x="0.0" y="548" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z7B-mQ-zhq" id="qpl-KH-Q8Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqv-pE-rrO">
+                                                    <rect key="frame" x="0.0" y="7" width="77" height="30"/>
+                                                    <state key="normal" title="קול ברמה">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="kolBarama:" destination="tH9-9W-HnD" eventType="touchUpInside" id="Lft-4S-Ad3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mpJ-lv-zR6">
+                                        <rect key="frame" x="0.0" y="592" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mpJ-lv-zR6" id="ihC-iL-jHJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYJ-QW-bMr">
+                                                    <rect key="frame" x="21" y="7" width="36" height="30"/>
+                                                    <state key="normal" title="קול חי">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="kolHai:" destination="tH9-9W-HnD" eventType="touchUpInside" id="EjO-ir-mrL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="tH9-9W-HnD" id="6Us-sm-5dP"/>
+                            <outlet property="delegate" destination="tH9-9W-HnD" id="AA2-H1-oCV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="תחנות רדיו" id="m8V-9W-Apj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1L-xR-Wfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939.6875" y="314.26056338028167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zjn-sQ-w4K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Dm-Bv-YbO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="znU-47-r3F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6IY-z8-Mx7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0h6-O5-jJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307.5" y="309.50704225352104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Idanpluslogo1-1" width="237" height="137"/>
+        <image name="background" width="425" height="328"/>
+        <image name="f3ls0" width="125" height="125"/>
+        <image name="th_721715612_11_122_584lo" width="125" height="125"/>
+        <image name="th_721716333_10_122_397lo" width="125" height="125"/>
+    </resources>
+</document>
